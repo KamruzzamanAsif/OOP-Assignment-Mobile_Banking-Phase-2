@@ -20,7 +20,7 @@ public class Nagad extends Account {
             System.out.println("Add Money limit exits");
     }
 
-    // cash out method for Bkash
+    // cash out method for Nagad
     public void cash_out(double amount, String pin){
         if(pin=="NULL"){
             System.out.println(account_holder_name+" Pin is not set yet.Set your pin now");
@@ -43,7 +43,7 @@ public class Nagad extends Account {
     //send money method for Nagad
     public void send_money(double amount, String pin){
         if(this.pin==pin){
-            if(amount<=2500 && amount>=10){
+            if(amount<=25000 && amount>=10){
                 super.add_money(amount); // no charge applicable using Nagad app but 5taka will be charged using USSD
             }
             else{
