@@ -39,7 +39,7 @@ public class Rocket extends Account {
     //send money method for Rocket
     public void send_money(double amount, String pin){
         if(this.pin==pin){
-            if(amount<=2500 && amount>=10){
+            if(amount<=25000 && amount>=10){
                 super.add_money(amount); // no charge applicable
             }
             else{
